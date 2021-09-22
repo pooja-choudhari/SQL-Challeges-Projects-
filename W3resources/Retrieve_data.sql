@@ -122,3 +122,13 @@ SELECT year, subject, winner, country
   FROM nobel_win
  WHERE subject = 'Chemistry'
    AND year>=1965 AND year<=1975;
+
+13. Write a SQL query to show all details of the Prime Ministerial winners after 1972 of Menachem Begin and Yitzhak Rabin.
+SELECT *
+FROM nobel_win
+WHERE year >= 1972 AND WINNER IN ('Menachem Begin', 'Yitzhak Rabin');
+
+14. From the following table, write a SQL query to find the details of the winners whose first name matches with the string 'Louis'. Return year, subject, winner, country, and category.
+SELECT *
+FROM nobel_win
+WHERE WINNER LIKE 'Louis%';
