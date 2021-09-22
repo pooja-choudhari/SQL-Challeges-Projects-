@@ -64,7 +64,7 @@ YEAR SUBJECT                   WINNER                                        COU
 1987 Physics                   Johannes Georg Bednorz                        Germany                Scientist
 1987 Literature                Joseph Brodsky                                Russia                 Linguist
 1987 Economics                 Robert Solow                                  USA                    Economist
-1994 Literature                Kenzaburo Oe                                  Japan                  Linguist        
+1994 Literature                Kenzaburo Oe                                  Japan                  Linguist
 
 1. Write a SQL statement to display all the information of all salesmen.
 SELECT *
@@ -97,4 +97,28 @@ SELECT ord_no, ord_date, purch_amt
 FROM orders
 WHERE salesman_id = 5001;
 
-8.
+8.From the following table, write a SQL query to find the Nobel Prize winner(s) in the year 1970. Return year, subject and winner.
+SELECT YEAR, SUBJECT, WINNER
+FROM nobel_win
+WHERE YEAR = 1970;
+
+9.From the following table, write a SQL query to find the Nobel Prize winner in 'Literature' in the year 1970. Return winner.
+SELECT  WINNER
+FROM nobel_win
+WHERE SUBJECT ='Literature' AND YEAR = 1970;
+
+10. From the following table, write a SQL query to find the Nobel Prize winner 'Dennis Gabor'. Return year, subject.
+SELECT YEAR, SUBJECT
+FROM nobel_win
+WHERE WINNER = 'Dennis Gabor';
+
+11.From the following table, write a SQL query to find the Nobel Prize winners in 'Physics' since the year 1950. Return winner.
+SELECT WINNER
+FROM nobel_win
+WHERE SUBJECT = 'Physics' AND YEAR >= 1950;
+
+12. From the following table, write a SQL query to find the Nobel Prize winners in 'Chemistry' between the years 1965 to 1975. Begin and end values are included. Return year, subject, winner, and country
+SELECT year, subject, winner, country
+  FROM nobel_win
+ WHERE subject = 'Chemistry'
+   AND year>=1965 AND year<=1975;
