@@ -146,4 +146,13 @@ SELECT *
 FROM nobel_win
 WHERE SUBJECT NOT IN ('Physiology', 'Economics' );
 
-      
+17.From the following table, write a SQL query to find the details of the Nobel Prize winner 'Johannes Georg Bednorz'. Return year, subject, winner, country, and category.
+SELECT *
+FROM nobel_win
+WHERE WINNER = 'Johannes Georg Bednorz';
+
+18. From the following table, write a SQL query to find the Nobel Prize winners for the subject not started with the letter 'P'. Return year, subject, winner, country, and category. Order the result by year, descending.
+SELECT *
+FROM nobel_win
+WHERE WINNER NOT LIKE 'P%'
+ORDER BY WINNER;
