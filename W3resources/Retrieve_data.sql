@@ -156,3 +156,9 @@ SELECT *
 FROM nobel_win
 WHERE WINNER NOT LIKE 'P%'
 ORDER BY WINNER;
+
+19.From the following table, write a SQL query to find the details of 1970 Nobel Prize winners. Order the result by subject, ascending except ‘Chemistry’ and ‘Economics’ which will come at the end of result set. Return year, subject, winner, country, and category.
+SELECT *
+FROM nobel_win
+WHERE YEAR = 1970
+ORDER BY SUBJECT ASC;
