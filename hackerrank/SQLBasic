@@ -8,4 +8,11 @@ SELECT NAME
 FROM CITY
 WHERE POPULATION > 120000 AND COUNTRYCODE = 'USA';
 
-3.
+3.Query a count of the number of cities in CITY having a Population larger than 100,100000
+SELECT COUNT(NAME)
+FROM CITY
+WHERE POPULATION > 100000;
+
+4.Query all columns (attributes) for every row in the CITY table.
+SELECT *
+FROM CITY;
