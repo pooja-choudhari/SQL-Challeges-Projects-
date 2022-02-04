@@ -45,3 +45,11 @@ ORDER BY CITY;
 10. Find the difference between the total number of CITY entries in the table and the number of distinct CITY entries in the table.
 SELECT COUNT(CITY)- COUNT(DISTINCT CITY)
 FROM STATION
+
+11. Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from STATION. Your result cannot contain duplicates.
+SELECT DISTINCT CITY
+FROM STATION
+WHERE REGEXP_LIKE(CITY, '^[aeiouAEIOU]')
+ORDER BY CITY;
+
+ref article - https://www.techonthenet.com/oracle/regexp_like.php
