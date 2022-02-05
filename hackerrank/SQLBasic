@@ -53,3 +53,8 @@ WHERE REGEXP_LIKE(CITY, '^[aeiouAEIOU]')
 ORDER BY CITY;
 
 ref article - https://www.techonthenet.com/oracle/regexp_like.php
+
+12. Query the list of CITY names ending with vowels (a, e, i, o, u) from STATION. Your result cannot contain duplicates.
+SELECT DISTINCT CITY
+FROM STATION
+WHERE REGEXP_LIKE(CITY, '[aieouAIEOU]$');
