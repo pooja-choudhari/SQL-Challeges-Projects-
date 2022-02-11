@@ -45,4 +45,10 @@ WHERE area > 3000000 XOR population > 250000000;
 
 XOR operator in MYSQL - https://www.w3resource.com/mysql/logical-operators/xor-operator.php
 
-10.
+10.Show the name and population in millions and the GDP in billions for the countries of the continent 'South America'. Use the ROUND function to show the values to two decimal places.
+SELECT name, ROUND(population/1000000, 2) AS population_millions,
+ROUND(GDP/1000000000, 2) AS gdp_billions
+FROM world
+WHERE continent = 'South America';
+
+ROUND FUNCTION - https://learnsql.com/cookbook/how-to-round-numbers-in-sql/
