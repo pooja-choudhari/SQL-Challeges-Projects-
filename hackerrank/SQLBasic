@@ -80,4 +80,9 @@ WHERE DISTRICT = 'California';
 SELECT ROUND(AVG(POPULATION)) AS AVG_POPULATION
 FROM CITY;
 
-17.
+17.Query the list of CITY names from STATION that do not start with vowels. Your result cannot contain duplicates.
+SELECT DISTINCT CITY
+FROM STATION
+WHERE NOT REGEXP_LIKE(CITY, '^[aeiouAEIOU]');
+
+ref - https://www.javatpoint.com/mysql-not-regexp-operator#:~:text=NOT%20REGEXP%20in%20MySQL%20is,Otherwise%2C%20the%20result%20is%201.
