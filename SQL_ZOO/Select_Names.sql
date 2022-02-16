@@ -17,3 +17,13 @@ WHERE name LIKE '%x%';
 SELECT name
 FROM world
 WHERE name LIKE '%land';
+
+5.Find the countries that start with C and end with ia
+SELECT name
+FROM world
+WHERE name LIKE 'C%' and name LIKE '%ia';
+
+6.Find the country that has oo in the name
+SELECT name
+FROM world
+WHERE name LIKE '%oo%';
