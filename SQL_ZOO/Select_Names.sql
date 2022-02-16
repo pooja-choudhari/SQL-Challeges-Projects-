@@ -27,3 +27,8 @@ WHERE name LIKE 'C%' and name LIKE '%ia';
 SELECT name
 FROM world
 WHERE name LIKE '%oo%';
+
+7.Find the countries that have three or more a in the name
+SELECT name
+FROM world
+WHERE name LIKE '%a%a%a%';
