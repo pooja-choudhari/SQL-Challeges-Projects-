@@ -47,3 +47,8 @@ WHERE name LIKE '%o__o%';
 SELECT name
 FROM world
 WHERE name LIKE '____';
+
+11.Find the country where the name is the capital city.
+SELECT name
+FROM world
+WHERE name LIKE capital;
