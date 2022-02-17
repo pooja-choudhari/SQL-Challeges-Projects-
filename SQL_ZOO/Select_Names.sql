@@ -42,3 +42,8 @@ ORDER BY name;
 SELECT name
 FROM world
 WHERE name LIKE '%o__o%';
+
+10.Find the countries that have exactly four characters.
+SELECT name
+FROM world
+WHERE name LIKE '____';
