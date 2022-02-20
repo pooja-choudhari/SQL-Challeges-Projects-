@@ -91,3 +91,9 @@ ref - https://www.javatpoint.com/mysql-not-regexp-operator#:~:text=NOT%20REGEXP%
 SELECT DISTINCT CITY
 FROM STATION
 WHERE NOT REGEXP_LIKE(CITY, '[aeiouAEIOU]$');
+
+19.Weather Observation Station 11
+Query the list of CITY names from STATION that either do not start with vowels or do not end with vowels. Your result cannot contain duplicates.
+SELECT DISTINCT CITY
+FROM STATION
+WHERE NOT REGEXP_LIKE(CITY, '^[aeiouAEIOU].*[aeiouAEIOU]$');
