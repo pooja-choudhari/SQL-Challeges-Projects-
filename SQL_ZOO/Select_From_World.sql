@@ -11,3 +11,13 @@ WHERE population >= 200000000;
 SELECT name, GDP/population AS per_capita
 FROM world
 WHERE population >= 200000000;
+
+4.Show the name and population in millions for the countries of the continent 'South America'. Divide the population by 1000000 to get population in millions.
+SELECT name, population/1000000 AS population_millions
+FROM world
+WHERE continent = 'South America';
+
+5.Show the name and population for France, Germany, Italy
+SELECT name, population
+FROM world
+WHERE name IN ('France', 'Germany', 'Italy');
