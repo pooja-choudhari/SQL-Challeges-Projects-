@@ -40,3 +40,8 @@ WHERE area > 3000000 XOR population > 250000000;
 9. Show the name and population in millions and the GDP in billions for the countries of the continent 'South America'. Use the ROUND function to show the values to two decimal places.
 SELECT name, ROUND(population/1000000, 2) AS population_millions, ROUND(GDP/1000000000,2) AS GDP_billions
 FROM world;
+
+10.Show per-capita GDP for the trillion dollar countries to the nearest $1000.
+SELECT name, ROUND(GDP/population,-3) AS per_capita_GDP_trillions
+FROM world
+WHERE GDP >= 1000000000000;
