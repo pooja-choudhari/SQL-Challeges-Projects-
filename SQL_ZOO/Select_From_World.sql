@@ -45,3 +45,8 @@ FROM world;
 SELECT name, ROUND(GDP/population,-3) AS per_capita_GDP_trillions
 FROM world
 WHERE GDP >= 1000000000000;
+
+11.Show the name and capital where the name and the capital have the same number of characters.
+SELECT name, capital
+FROM world
+WHERE LENGTH(name) = LENGTH(capital);
