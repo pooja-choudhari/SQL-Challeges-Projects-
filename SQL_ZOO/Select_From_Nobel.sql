@@ -48,3 +48,8 @@ SELECT *
 FROM nobel
 WHERE (subject='Medicine' and yr <1910) OR
       (subject='Literature' AND yr>=2004);
+
+11.Find all details of the prize won by PETER GRÜNBERG
+SELECT *
+FROM nobel
+WHERE winner = 'PETER GRÜNBERG';      
