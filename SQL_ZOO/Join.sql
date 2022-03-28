@@ -31,3 +31,9 @@ SELECT mdate, teamname
 FROM game
 JOIN eteam ON game.team1 = eteam.id
 WHERE coach = 'Fernando Santos';
+
+7.List the player for every goal scored in a game where the stadium was 'National Stadium, Warsaw'
+SELECT player
+FROM goal
+JOIN game ON goal.matchid = game.id
+WHERE stadium = 'National Stadium, Warsaw';
