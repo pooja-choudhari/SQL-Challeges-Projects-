@@ -55,3 +55,5 @@ SELECT stadium, COUNT(gtime)
 FROM game
 JOIN goal ON goal.matchid = game.id
 GROUP BY stadium;
+
+11.For every match involving 'POL', show the matchid, date and the number of goals scored.
