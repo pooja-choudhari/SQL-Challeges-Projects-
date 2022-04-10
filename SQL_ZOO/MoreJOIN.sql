@@ -4,3 +4,6 @@ FROM movie
 WHERE yr = 1962;
 
 2.When was Citizen Kane released
+SELECT yr
+FROM movie
+WHERE title = 'Citizen Kane';
