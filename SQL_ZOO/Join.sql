@@ -68,3 +68,5 @@ FROM game
 JOIN goal ON goal.matchid = game.id
 WHERE teamid = 'GER'
 GROUP BY matchid, mdate;
+
+13 Sort your result by mdate, matchid, team1 and team2.
