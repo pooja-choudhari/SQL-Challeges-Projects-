@@ -13,3 +13,8 @@ SELECT id, title, yr
 FROM movie
 WHERE title LIKE '%Star%Trek%'
 ORDER by yr;
+
+4.What id number does the actor 'Glenn Close' have?
+SELECT id
+from actor
+WHERE name = 'Glenn Close';
