@@ -18,3 +18,8 @@ ORDER by yr;
 SELECT id
 from actor
 WHERE name = 'Glenn Close';
+
+5.What is the id of the film 'Casablanca'
+SELECT id
+from movie
+WHERE title = 'Casablanca';
